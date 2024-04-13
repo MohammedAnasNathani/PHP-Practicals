@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design College Admission Form using Form Controls in PHP</title>
+  </head>
+  <body>
+    <h2>College Admission Form</h2>
+    <form action="11Admission.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required /><br /><br />
+
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="Female" required />
+      <label for="female">Female</label><br /><br />
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Computer Engineering">
+          Computer Engineering
+        </option></select
+      ><br /><br />
+
+      <label for="semester">Semester:</label>
+      <input
+        type="number"
+        id="semester"
+        name="semester"
+        min="1"
+        required
+      /><br /><br />
+
+      <label>Interested Subjects:</label><br />
+      <input type="checkbox" id="maths" name="subjects[]" value="Maths" />
+      <label for="maths">Maths</label><br />
+      <input type="checkbox" id="science" name="subjects[]" value="Science" />
+      <label for="science">Science</label><br />
+      <input
+        type="checkbox"
+        id="programming"
+        name="subjects[]"
+        value="Programming"
+      />
+      <label for="programming">Programming</label><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea
+      ><br /><br />
+
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+  </body>
+</html>

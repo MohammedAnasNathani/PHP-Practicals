@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>WAP to implement Web Page Validation</title>
+  </head>
+  <body>
+    <h2>Student Form</h2>
+    <form action="10Validate.php" method="post">
+      Roll Number:
+      <input type="text" id="stud_roll" name="stud_roll" required /><br />
+      Name:<input type="text" id="stud_name" name="stud_name" required /><br />
+      Address:<input
+        type="text"
+        id="stud_address"
+        name="stud_address"
+        required
+      /><br />
+      Date of Birth:
+      <input type="date" id="dob" name="date_of_birth" required /><br />
+      Mobile Number:<input
+        type="text"
+        id="mobile_no"
+        name="mobile_no"
+        required
+      /><br />
+      Branch:
+      <select id="branch" name="branch" required>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Artificial Intelligence">
+          Artificial Intelligence
+        </option></select
+      ><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
